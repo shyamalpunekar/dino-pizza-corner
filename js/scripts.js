@@ -4,18 +4,29 @@ var meat = [];
 var vegetable = [];
 var orderTotal = 0;
 
-function Customer(customername,size, crust, sauce, cheese, veg) {
-  this.customername= name;
-  this.pizzanumber = 1;
-  this.pizzasize = size;
-  this.pizzacrust = crust;
-  this.pizzasauce = sauce;
-  this.pizzacheese = cheese;
-  this.pizzameat = meat;
-  this.pizzaveg = veg;
+function Customer(customerName,size, crust, sauce, cheese, veg) {
+  this.customerName= customerName;
+  this.pizzaCount = 1;
+  this.pizzaSize = size;
+  this.pizzaCrust = crust;
+  this.pizzaSauce = sauce;
+  this.pizzaCheese = cheese;
+  this.pizzaMeat = meat;
+  this.pizzaVeg = veg;
   this.total = 1;
 }
 
+//Add price as per size selected
+Customer.prototype.size = function() {
+  if (this.pizzaSize === "Small") {
+    return this.total += 12;
+  } else if (this.pizzaSize === "Medium") {
+    return this.total += 15;
+  } else if (this.pizzaSize === "Large") {
+    return this.total += 18;
+  } else {
+    return this.total += 21;
+  }
 
 
 //form Reset
@@ -42,6 +53,8 @@ var displayResult = function() {
   $(".veggiesPizza").text(newCustomer.pizzaveg);
   $(".pizza-price").text(newCustomer.total);
 }
+
+
 
 //form submit
 //User Interface
