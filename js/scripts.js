@@ -1,3 +1,16 @@
+
+//form Reset
+var resetValues = function(){
+  $(".customerName").val("");
+  $(".customerPhone").val("");
+  $("#pizza-count").val("");
+  $("#pizza-size").val("");
+  $("#pizza-crust").val("");
+  $("#pizza-sauce").val("");
+  $("#cheese-type").val("");
+}
+
+//form submit
 $(document).ready(function() {
   $("#orderForm").click(function(event){
    event.preventDefault();
@@ -14,6 +27,7 @@ $(document).ready(function() {
     $("input:checkbox[name='vegetable']:checked").each(function(){
       (vegetable).push(this.value);
     });
+
 });
 
 });
