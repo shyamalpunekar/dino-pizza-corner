@@ -29,6 +29,10 @@ Customer.prototype.size = function() {
   }
 }
 
+// Calculate Price for pizza
+Customer.prototype.meat = function() {
+
+}
 
 //form Reset
 var resetValues = function(){
@@ -50,8 +54,8 @@ var displayResult = function() {
   $(".cheesePizza").text(newCustomer.pizzaCheese);
   $(".meatPizza").text(newCustomer.pizzaMeat);
   $(".veggiesPizza").text(newCustomer.pizzaVeg);
-  $(".pizza-price").text(newCustomer.total);
-  $("#orderSummary").show();
+  $(".pizza-price").text(newCustomer.size());
+  $("#show-total-price").show();
 }
 
 
@@ -74,18 +78,15 @@ $(document).ready(function() {
     $("input:checkbox[name='vegetable']:checked").each(function(){
       (vegetable).push(this.value);
     });
+    console.log(meat);
+    console.log(vegetable);
+    console.log(this.total);
     displayResult();
   });
+  $("#placeOrder").click(function(event) {
+     $("#show-total-price").show();
+     $(".orderSubmitted").show();
+     resetValues();
+   });
+
 });
-    // $("#placeOrder").click(function(event) {
-    //    $("#show-total-price").hide();
-    //    $(".orderSubmitted").show();
-    //    resetValues();
-    //  });
-    //
-    //  $("#newOrder").click(function(even){
-    //    resetValues();
-    //    $("#orderForm").show();
-    //    $(".orderSubmitted").hide();
-    //  });
-// });
