@@ -1,0 +1,36 @@
+body{
+  /*background-color: #ccffcc;*/
+  background-image: url(../img/pizza-image.jpeg);
+
+}
+
+#pizza-slice-logo{
+  height: 140px;
+  width: 160px;
+}
+
+#about{
+  margin-left: 20px;
+}
+
+#homepage-title{
+  text-decoration-color: white;
+  color: #ffe6e6;
+  font-size: 40px;
+  font-family: Lucida Sans Typewriter;
+}
+
+h3{
+  color: #008040;
+  font-family: sans-serif;
+  font-size: 24px;
+}
+
+#vegetables-styles, #meat-styles{
+  color: #70db70;
+}
+
+#veg-title, #meat-title{
+  color: #ff6666;
+  font-size: 20px;
+}

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" text="text/css">
+    <script src="js/jquery-3.2.1.js"></script>
+    <script src="js/scripts.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Bungee+Shade" rel="stylesheet">
+    <title>Dino Pizza!!!</title>
+  </head>
+
+  <body>
+    <div class="navbar navbar-light bg-faded justify-content-between container">
+      <div class="navbar-header">
+        <div class="header">
+          <img id="pizza-slice-logo" src="img/pizza-slice.jpeg" alt="pizza-slice-logo" />
+        </div><br>
+        <ul class="nav nav-pills">
+          <li class= "active" id="home"><a href="#">Home</a></li>
+          <li class= "active" id="about"><a href="#">About</a></li>
+        </ul>
+        <div class="page page-header">
+          <h2 id="homepage-title">Welcome to Dino's Pizza House!!!!</h2>
+        </div>
+        <a href="#"></a>
+      </div>
+    </div>
+
+    <div class="container" id="orderForm">
+     <div class="jumbotron">
+       <h3>We've surrounded ourselves with like-minded people with a passion for making better pizza, including franchisees, suppliers, athletes, pizza makers, and farmers we've known for over 10 years. Like our friend Piggy-Man in California—he grows the best tomatoes.
+       In the end, Dino's desire to create a better pizza built more than a pizza company... We built a pizza family..</h3>
+     </div>
+     <h3>Place your order:</h3>
+     <div class="row">
+       <div class="col-md-6">
+     <form>
+       <div class="form-group">
+         <label for="customerName">Customer Name:</label>
+         <input type="text" value="Name" class="customerName form-control" required="" placeholder="">
+       </div>
+       <div class="form-group">
+          <label for="customerPhone">Customer Phone Number:</label>
+          <input type="tel" title="Phone number" name="phoneNumber" value="phone number" class="customerPhone form-control">
+        </div>
+        <div class="form-group">
+          <label for="pizza-count">How many pizza's would you like to have???</label>
+          <select class="form-control" name="pizzaCount" id="pizza-count">
+            <option value="0">Select Count</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="pizzaSize">Pizza size</label>
+          <select class="form-control" name="pizza size" id="pizza-size">
+            <option>Select a size</option>
+            <option>Small</option>
+            <option>Medium</option>
+            <option>Large</option>
+            <option>Extra Large</option>
+          </select>
+        </div>
+      <div class="form-group">
+        <label for="crust">Crust</label>
+        <select class="form-control" name="pizza crust" id="pizza-crust">
+          <option value="0">Select a crust type</option>
+          <option value="1">Tradional</option>
+          <option value="3">Gluten Free</option>
+          <option value="5">Tavern Thin</option>
+        </select>
+      </div>
+      <div class="form-group">
+          <label for="cheese">Cheese</label>
+          <select class="form-control" name="cheese" id="cheese">
+            <option value="0">Select a type of cheese</option>
+            <option value="5">Mozzarella</option>
+            <option value="3">Cheddar</option>
+            <option value="1">PepperJack</option>
+          </select>
+      </div><br>
+      <div class="form-group">
+        <label for="sauces">Sauce</label>
+        <select class="form-control" name="pizza sauce" id="pizza-sauce">
+          <option value="0">Select a sauce of your choice!!!</option>
+          <option value="1">Tomato</option>
+          <option value="3">Barbecue</option>
+          <option value="3">Apple Sauce</option>
+        </select>
+      </div><br><br>
+      <div class="form-group" id="vegetables-styles">
+        <label for="vegetables" id="veg-title">Vegetable toppings</label><br>
+          <input type="checkbox" id="veg-black-olives" name="vegetable" value="1"> Black Olives<br>
+          <input type="checkbox" id="veg-mushroom" name="vegetable" value="1"> Mushrooms<br>
+          <input type="checkbox" id="veg-bell-pepper "name="vegetable" value="2"> Fresh Organic Bell Pepper<br>
+          <input type="checkbox" id="veg-jalapenos" name="vegetable" value="2"> Jalapenost<br>
+          <input type="checkbox" id="veg-onions" name="vegetable" value="1"> Red Onions<br>
+      </div>
+      <div class="form-group" id="meat-styles">
+          <label for="meat" id="veg-title">Meat toppings</label><br>
+            <input type="checkbox" id="meat-bacon" name="meat" value="1"> House-cured Canadian bacon<br>
+            <input type="checkbox" id="meat-sausage "name="meat" value="2"> House-made Sausage<br>
+            <input type="checkbox" id="meat-chicken" name="meat" value="1"> Free-range, hormone-free Chicken<br>
+      </div><br>
+        <button type="submit" class="btn btn-success" id="reviewOrder">Review</button>
+      </form>
+    </div>
+  </div>
+    </div>
+
+  </body>
+</html>
