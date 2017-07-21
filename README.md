@@ -1,6 +1,6 @@
 # Pizza Order Website
 
-#### Web application that allows user to order pizza online}, {14 July 2017}
+#### Web application that allows user to order pizza online, {14 July 2017}
 
 #### By _**{Shyamal Punekar}**_
 
@@ -12,26 +12,26 @@ Create a web application for a pizza company where a user can choose one or more
 Specs for Pizza Order Shop
 
 * User enters name
-  Input Example: Tom
-  Output Example: 'Tom' will be displayed on user's order details
+  * Input Example: Tom
+  * Output Example: 'Tom' will be displayed on user's order details
 * User enters phone number
-  Input Example: 505-555-555
-  Output Example: 505-555-555 will be displayed in user's order details.
+  * Input Example: 505-555-555
+  * Output Example: 505-555-555 will be displayed in user's order details.
 * User selects quantity of pizzas.
-  Input Example: 2
-  Output Example: 2 should be displayed and will be used in price calculation
+  * Input Example: 2
+  * Output Example: 2 should be displayed and will be used in price calculation
 * User selects cheese types for pizza.
-  Input Example: cheddar
-  Output Example: calculate price for cheddar and add it to price calculation
+  * Input Example: cheddar
+  * Output Example: calculate price for cheddar and add it to price calculation
 * User selects sauce types for pizza.
-    Input Example: barbecue sauce
-    Output Example: barbecue is selected from dropdown and calculate price for the same and add it to the price calculation.
+  * Input Example: barbecue sauce
+  *  Output Example: barbecue is selected from dropdown and calculate price for the same and add it to the price calculation.
 * User selects meat type.
-    Input Example: bacon
-    Output Example: bacon is selected from dropdown and calculate price for the same and add it to price calculation.
+  *  Input Example: bacon
+  *  Output Example: bacon is selected from dropdown and calculate price for the same and add it to price calculation.
 * User selects vegetables type.
-    Input Example: mushrooms.
-    Output Example: vegetables are selected from dropdown and calculate price for the same and add it to price calculation.
+  *  Input Example: mushrooms.
+  *  Output Example: vegetables are selected from dropdown and calculate price for the same and add it to price calculation.
 
 
 ## Setup/Installation Requirements
