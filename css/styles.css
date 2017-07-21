@@ -12,7 +12,7 @@ body{
   margin-left: 20px;
 }
 
-#homepage-title{
+#homepage-title, #about-header{
   text-decoration-color: white;
   color: #ffe6e6;
   font-size: 40px;
@@ -23,6 +23,12 @@ h3{
   color: #004d00;
   font-family: sans-serif;
   font-size: 24px;
+}
+
+#intro{
+  color: #ffe6e6;
+  font-family: Lucida Sans Typewriter;
+  font-size: 20px;
 }
 
 #vegetables-styles, #meat-styles{

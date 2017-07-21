@@ -32,8 +32,8 @@ var resetValues = function(){
 var displayResult = function() {
   $("#orderForm").hide();
   $(".orderSummary").show();
-  $(".customerName").text();
-  $(".customerPhone").text();
+  $("#customerName").text();
+  $("#customerPhone").text();
   $(".sizePizza").text(newCustomer.pizzasize);
   $(".crustPizza").text(newCustomer.pizzacrust);
   $(".saucePizza").text(newCustomer.pizzasauce);
@@ -62,9 +62,18 @@ $(document).ready(function() {
     $("input:checkbox[name='vegetable']:checked").each(function(){
       (vegetable).push(this.value);
     });
-
     displayResult();
+  });
 
-});
+  $("#placeOrder").click(function(event) {
+    $("#show-total-price").hide();
+    $(".orderSubmitted").show();
+    resetValues();
+  });
+
+  $("#newOrder").click(function(even){
+    $("#orderForm").show();
+    $(".orderSubmitted").hide();
+  });
 
 });
