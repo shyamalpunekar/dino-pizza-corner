@@ -43,3 +43,21 @@ h3{
 .jumbotron{
   background-color: #ffe6e6;
 }
+
+@media screen and (max-width: 768px) and (min-width: 600px) {
+	body {
+		background-color: black;
+		color: green;
+    font-family: sans-serif;
+	}
+}
+
+@media screen and (max-width:480px) {
+	body {
+		background-color: teal;
+	}
+	.centerTest {
+		width: 100%;
+		text-align: center;
+	}
+}
