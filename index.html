@@ -13,13 +13,16 @@
   <body>
     <div class="navbar navbar-light bg-faded justify-content-between container">
       <div class="navbar-header">
+        <header class="page-header">
+        <ul class="nav nav-tabs pull-right">
+          <li class="active"><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Dino</a></li>
+        </ul>
+        <h2 id="homepage-title" class="header">Dino's Pizza Corner!!!</h2>
+      </header>
         <div class="header">
           <img id="pizza-slice-logo" src="img/pizza-slice.jpeg" alt="pizza-slice-logo" />
         </div><br>
-        <ul class="nav nav-pills">
-          <li class= "active" id="home"><a href="#">Home</a></li>
-          <li class= "active" id="about"><a href="#">About</a></li>
-        </ul>
         <div class="page page-header">
           <h2 id="homepage-title">Welcome to Dino's Pizza House!!!!</h2>
         </div>
@@ -32,7 +35,7 @@
        <h3>We've surrounded ourselves with like-minded people with a passion for making better pizza, including franchisees, suppliers, athletes, pizza makers, and farmers we've known for over 10 years. Like our friend Piggy-Man in California—he grows the best tomatoes.
        In the end, Dino's desire to create a better pizza built more than a pizza company... We built a pizza family..</h3>
      </div>
-     <h3>Place your order:</h3>
+     <h2>Place your order here:</h2>
      <div class="row">
        <div class="col-md-6">
      <form>
@@ -96,7 +99,7 @@
           <input type="checkbox" id="veg-black-olives" name="vegetable" value="1"> Black Olives<br>
           <input type="checkbox" id="veg-mushroom" name="vegetable" value="1"> Mushrooms<br>
           <input type="checkbox" id="veg-bell-pepper "name="vegetable" value="2"> Fresh Organic Bell Pepper<br>
-          <input type="checkbox" id="veg-jalapenos" name="vegetable" value="2"> Jalapenost<br>
+          <input type="checkbox" id="veg-jalapenos" name="vegetable" value="2"> Jalapenos<br>
           <input type="checkbox" id="veg-onions" name="vegetable" value="1"> Red Onions<br>
       </div>
       <div class="form-group" id="meat-styles">
@@ -108,8 +111,32 @@
         <button type="submit" class="btn btn-success" id="reviewOrder">Review</button>
       </form>
     </div>
-  </div>
+  </div><br><br>
+  <div class="orderSummary">
+      <div class="row">
+        <div class="col-md-6">
+          <div id="show-total-price">
+            <h2>Your Order Details:</h2>
+            <p>Customer name: <span class="customerName"></span></p>
+            <p>Customer phone number: <span class="customerPhone"></span></p>
+            <p>Size: <span class="sizePizza"></span></p>
+            <p>Cheese: <span class="cheesePizza"></span></p>
+            <p>Crust: <span class="crustPizza"></span></p>
+            <p>Sauce: <span class="saucePizza"></span></p>
+            <p>Vegetables: <span class="veggiesPizza"></span></p>
+            <p>Meats: <span class="meatPizza"></span></p>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <h2>Total price: <span class="pizza-price"></span></h3>
+        </div>
+        <button type="submit" class="btn btn-success" id="placeOrder">Order</button>
+      </div>
     </div>
-
+    <div class="orderSubmitted jumbotron">
+      <h2>Thank you for choosing Dino's Pizza Corner! Your order has been placed! Your order will be ready in 25 minutes.</h2>
+      <button type="submit" class="btn btn-primary" id="newOrder">Place New Order</button>
+    </div>
+    </div>
   </body>
 </html>
