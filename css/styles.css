@@ -1,63 +1,65 @@
-body{
+body {
   background-image: url(../img/pizza-image.jpeg);
-
 }
 
-#pizza-slice-logo{
+#pizza-slice-logo {
   height: 140px;
   width: 160px;
 }
 
-#about{
+#about {
   margin-left: 20px;
 }
 
-#homepage-title, #about-header{
+#homepage-title,
+#about-header {
   text-decoration-color: white;
   color: #ffe6e6;
   font-size: 40px;
   font-family: Lucida Sans Typewriter;
 }
 
-h3{
+h3 {
   color: #004d00;
   font-family: sans-serif;
   font-size: 24px;
 }
 
-#intro{
+#intro {
   color: #ffe6e6;
   font-family: Lucida Sans Typewriter;
   font-size: 20px;
 }
 
-#vegetables-styles, #meat-styles{
+#vegetables-styles,
+#meat-styles {
   color: #70db70;
 }
 
-#veg-title, #meat-title{
+#veg-title,
+#meat-title {
   color: #ff0000;
   font-size: 20px;
 }
 
-.jumbotron{
+.jumbotron {
   background-color: #ffe6e6;
 }
 
 @media screen and (max-width: 768px) and (min-width: 600px) {
-	body {
-		background-color: black;
-		color: green;
+  body {
+    background-color: black;
+    color: green;
     font-family: sans-serif;
-	}
+  }
 }
 
 @media screen and (max-width:480px) {
-	body {
-		background-color: teal;
-	}
-	.centerTest {
-		width: 100%;
-		text-align: center;
-	}
+  body {
+    background-color: teal;
+  }
+  .centerTest {
+    width: 100%;
+    text-align: center;
+  }
 }

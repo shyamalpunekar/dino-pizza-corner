@@ -4,8 +4,8 @@ var meat = [];
 var vegetable = [];
 var orderTotal = 0;
 
-function Customer(customerName,size, crust, sauce, cheese, veg) {
-  this.customerName= customerName;
+function Customer(customerName, size, crust, sauce, cheese, veg) {
+  this.customerName = customerName;
   this.pizzaCount = 1;
   this.pizzaSize = size;
   this.pizzaCrust = crust;
@@ -17,7 +17,7 @@ function Customer(customerName,size, crust, sauce, cheese, veg) {
 }
 
 //Add price as per size selected
-Customer.prototype.size = function() {
+Customer.prototype.size = function () {
   if (this.pizzaSize === "Small") {
     return this.total += 12;
   } else if (this.pizzaSize === "Medium") {
@@ -30,12 +30,29 @@ Customer.prototype.size = function() {
 }
 
 // Calculate Price for pizza
-Customer.prototype.meat = function() {
-
+Customer.prototype.meatPrice = function () {
+  if (this.pizzasize === "Small") {
+    for (index = 0; index < this.pizzameat.length; index++) {
+      this.total += 1;
+    }
+  } else if (this.pizzasize === "Medium") {
+    for (index = 0; index < this.pizzameat.length; index++) {
+      this.total += 2;
+    }
+  } else if (this.pizzasize === "Large") {
+    for (index = 0; index < this.pizzameat.length; index++) {
+      this.total += 3;
+    }
+  } else {
+    for (index = 0; index < this.pizzameat.length; index++) {
+      this.total += 4;
+      console.log(this.total);
+    }
+  }
 }
 
 //form Reset
-var resetValues = function(){
+var resetValues = function () {
   $(".customerName").val("");
   $(".customerPhone").val("");
   $("#pizza-count").val("");
@@ -45,7 +62,7 @@ var resetValues = function(){
   $("#cheese-type").val("");
 }
 
-var displayResult = function() {
+var displayResult = function () {
   $("#customerName").text(customerName);
   $("#customerPhone").text(customerPhone);
   $(".sizePizza").text(newCustomer.pizzaSize);
@@ -61,8 +78,8 @@ var displayResult = function() {
 
 //form submit
 //User Interface
-$(document).ready(function() {
-  $("#pizzaForm").submit(function(event) {
+$(document).ready(function () {
+  $("#pizzaForm").submit(function (event) {
     event.preventDefault();
     var customerName = $("#customerName").val();
     alert(customerName)
@@ -72,21 +89,18 @@ $(document).ready(function() {
     var crust = $("#pizza-crust").val();
     var sauces = $("#pizza-sauce").val();
     var cheese = $("#cheese-type").val();
-    $("input:checkbox[name='meat']:checked").each(function(){
+    $("input:checkbox[name='meat']:checked").each(function () {
       (meat).push(this.value);
     });
-    $("input:checkbox[name='vegetable']:checked").each(function(){
+    $("input:checkbox[name='vegetable']:checked").each(function () {
       (vegetable).push(this.value);
     });
-    console.log(meat);
-    console.log(vegetable);
-    console.log(this.total);
     displayResult();
   });
-  $("#placeOrder").click(function(event) {
-     $("#show-total-price").show();
-     $(".orderSubmitted").show();
-     resetValues();
-   });
+  $("#placeOrder").click(function (event) {
+    $("#show-total-price").show();
+    $(".orderSubmitted").show();
+    resetValues();
+  });
 
 });
