@@ -37,81 +37,82 @@
      <h2>Place your order here:</h2>
      <div class="row">
        <div class="col-md-6">
-     <form id="orderForm">
-       <div class="form-group">
-         <label for="customerName">Customer Name:</label>
-         <input type="text" value="" id="customerName"class="form-control" required="" placeholder="">
-       </div>
-       <div class="form-group">
-          <label for="customerPhone">Customer Phone Number:</label>
-          <input type="tel" title="Phone number" name="phoneNumber" value="" id="customerPhone" class="form-control">
-        </div>
-        <div class="form-group">
-          <label for="pizza-count">How many pizza's would you like to have???</label>
-          <select class="form-control" name="pizzaCount" id="pizza-count">
-            <option value="0">Select Count</option>
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-          </select>
-        </div>
-        <div class="form-group">
-          <label for="pizzaSize">Pizza size</label>
-          <select class="form-control" name="pizza size" id="pizza-size">
-            <option>Select a size</option>
-            <option>Small</option>
-            <option>Medium</option>
-            <option>Large</option>
-            <option>Extra Large</option>
-          </select>
-        </div>
-      <div class="form-group">
-        <label for="crust">Crust</label>
-        <select class="form-control" name="pizza crust" id="pizza-crust">
-          <option value="0">Select a crust type</option>
-          <option value="1">Tradional</option>
-          <option value="3">Gluten Free</option>
-          <option value="5">Tavern Thin</option>
-        </select>
-      </div>
-      <div class="form-group">
-          <label for="cheese">Cheese</label>
-          <select class="form-control" name="cheese" id="cheese-type">
-            <option value="0">Select a type of cheese</option>
-            <option value="5">Mozzarella</option>
-            <option value="3">Cheddar</option>
-            <option value="1">PepperJack</option>
-          </select>
-      </div><br>
-      <div class="form-group">
-        <label for="sauces">Sauce</label>
-        <select class="form-control" name="pizza sauce" id="pizza-sauce">
-          <option value="0">Select a sauce of your choice!!!</option>
-          <option value="1">Tomato</option>
-          <option value="3">Barbecue</option>
-          <option value="3">Apple Sauce</option>
-        </select>
-      </div><br><br>
-      <div class="form-group" id="vegetables-styles">
-        <label for="vegetables" id="veg-title">Vegetable toppings</label><br>
-          <input type="checkbox" id="veg-black-olives" name="vegetable" value="1"> Black Olives<br>
-          <input type="checkbox" id="veg-mushroom" name="vegetable" value="1"> Mushrooms<br>
-          <input type="checkbox" id="veg-bell-pepper "name="vegetable" value="2"> Fresh Organic Bell Pepper<br>
-          <input type="checkbox" id="veg-jalapenos" name="vegetable" value="2"> Jalapenos<br>
-          <input type="checkbox" id="veg-onions" name="vegetable" value="1"> Red Onions<br>
-      </div>
-      <div class="form-group" id="meat-styles">
-          <label for="meat" id="veg-title">Meat toppings</label><br>
-            <input type="checkbox" id="meat-bacon" name="meat" value="1"> House-cured Canadian bacon<br>
-            <input type="checkbox" id="meat-sausage "name="meat" value="2"> House-made Sausage<br>
-            <input type="checkbox" id="meat-chicken" name="meat" value="1"> Free-range, hormone-free Chicken<br>
-      </div><br>
-        <button type="submit" class="btn btn-success" id="reviewOrder">Review</button>
-      </form>
+         <form id="pizzaForm">
+           <div class="form-group">
+             <label for="customerName">Customer Name:</label>
+             <input type="text" value="" id="customerName"class="form-control" placeholder="Enter Name">
+           </div>
+           <div class="form-group">
+              <label for="customerPhone">Customer Phone Number:</label>
+              <input type="tel" title="Phone number" name="phoneNumber" value="" id="customerPhone" placeholder="Enter phone Number" class="form-control">
+            </div>
+            <div class="form-group">
+              <label for="pizza-count">How many pizza's would you like to have???</label>
+              <select class="form-control" name="pizzaCount" id="pizza-count">
+                <option value="0">Select Count</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="pizzaSize">Pizza size</label>
+              <select class="form-control" name="pizza size" id="pizza-size">
+                <option>Select a size</option>
+                <option>Small</option>
+                <option>Medium</option>
+                <option>Large</option>
+                <option>Extra Large</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="crust">Crust</label>
+              <select class="form-control" name="pizza crust" id="pizza-crust">
+                <option value="0">Select a crust type</option>
+                <option value="1">Tradional</option>
+                <option value="3">Gluten Free</option>
+                <option value="5">Tavern Thin</option>
+              </select>
+            </div>
+            <div class="form-group">
+                <label for="cheese">Cheese</label>
+                <select class="form-control" name="cheese" id="cheese-type">
+                  <option value="0">Select a type of cheese</option>
+                  <option value="5">Mozzarella</option>
+                  <option value="3">Cheddar</option>
+                  <option value="1">PepperJack</option>
+                </select>
+            </div><br>
+            <div class="form-group">
+              <label for="sauces">Sauce</label>
+              <select class="form-control" name="pizza sauce" id="pizza-sauce">
+                <option value="0">Select a sauce of your choice!!!</option>
+                <option value="1">Tomato</option>
+                <option value="3">Barbecue</option>
+                <option value="3">Apple Sauce</option>
+              </select>
+            </div><br><br>
+            <div class="form-group" id="vegetables-styles">
+              <label for="vegetables" id="veg-title">Vegetable toppings</label><br>
+                <input type="checkbox" id="veg-black-olives" name="vegetable" value="1"> Black Olives<br>
+                <input type="checkbox" id="veg-mushroom" name="vegetable" value="1"> Mushrooms<br>
+                <input type="checkbox" id="veg-bell-pepper "name="vegetable" value="2"> Fresh Organic Bell Pepper<br>
+                <input type="checkbox" id="veg-jalapenos" name="vegetable" value="2"> Jalapenos<br>
+                <input type="checkbox" id="veg-onions" name="vegetable" value="1"> Red Onions<br>
+            </div>
+            <div class="form-group" id="meat-styles">
+                <label for="meat" id="veg-title">Meat toppings</label><br>
+                  <input type="checkbox" id="meat-bacon" name="meat" value="1"> House-cured Canadian bacon<br>
+                  <input type="checkbox" id="meat-sausage "name="meat" value="2"> House-made Sausage<br>
+                  <input type="checkbox" id="meat-chicken" name="meat" value="1"> Free-range, hormone-free Chicken<br>
+            </div><br>
+
+           <button type="submit" class="btn btn-success">Order Check</button>
+         </form>
     </div>
   </div><br><br>
-  <div class="orderSummary">
+  <div id="orderSummary">
       <div class="row">
         <div class="col-md-6">
           <div id="show-total-price">

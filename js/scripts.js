@@ -27,6 +27,7 @@ Customer.prototype.size = function() {
   } else {
     return this.total += 21;
   }
+}
 
 
 //form Reset
@@ -41,30 +42,28 @@ var resetValues = function(){
 }
 
 var displayResult = function() {
-  $("#orderForm").hide();
-  $(".orderSummary").show();
-  $("#customerName").text();
-  $("#customerPhone").text();
-  $(".sizePizza").text(newCustomer.pizzasize);
-  $(".crustPizza").text(newCustomer.pizzacrust);
-  $(".saucePizza").text(newCustomer.pizzasauce);
-  $(".cheesePizza").text(newCustomer.pizzacheese);
-  $(".meatPizza").text(newCustomer.pizzameat);
-  $(".veggiesPizza").text(newCustomer.pizzaveg);
+  $("#customerName").text(customerName);
+  $("#customerPhone").text(customerPhone);
+  $(".sizePizza").text(newCustomer.pizzaSize);
+  $(".crustPizza").text(newCustomer.pizzaCrust);
+  $(".saucePizza").text(newCustomer.pizzaSauce);
+  $(".cheesePizza").text(newCustomer.pizzaCheese);
+  $(".meatPizza").text(newCustomer.pizzaMeat);
+  $(".veggiesPizza").text(newCustomer.pizzaVeg);
   $(".pizza-price").text(newCustomer.total);
+  $("#orderSummary").show();
 }
-
 
 
 //form submit
 //User Interface
 $(document).ready(function() {
-  $("#orderForm").click(function(event){
-    // alert("hi")
-   event.preventDefault();
-   var customerName = $(".customerName").val();
-    var customerPhone = $(".customerPhone").val();
-    var number = $("#pizza-count").val();
+  $("#pizzaForm").submit(function(event) {
+    event.preventDefault();
+    var customerName = $("#customerName").val();
+    alert(customerName)
+    var customerPhone = $("#customerPhone").val();
+    var countNumber = $("#pizza-count").val();
     var size = $("#pizza-size").val();
     var crust = $("#pizza-crust").val();
     var sauces = $("#pizza-sauce").val();
@@ -77,16 +76,16 @@ $(document).ready(function() {
     });
     displayResult();
   });
-
-  $("#placeOrder").click(function(event) {
-    $("#show-total-price").hide();
-    $(".orderSubmitted").show();
-    resetValues();
-  });
-
-  $("#newOrder").click(function(even){
-    $("#orderForm").show();
-    $(".orderSubmitted").hide();
-  });
-
 });
+    // $("#placeOrder").click(function(event) {
+    //    $("#show-total-price").hide();
+    //    $(".orderSubmitted").show();
+    //    resetValues();
+    //  });
+    //
+    //  $("#newOrder").click(function(even){
+    //    resetValues();
+    //    $("#orderForm").show();
+    //    $(".orderSubmitted").hide();
+    //  });
+// });
