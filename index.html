@@ -29,7 +29,7 @@
       </div>
     </div>
 
-    <div class="container" id="orderForm">
+    <div class="container">
      <div class="jumbotron">
        <h3>We've surrounded ourselves with like-minded people with a passion for making better pizza, including franchisees, suppliers, athletes, pizza makers, and farmers we've known for over 10 years. Like our friend Piggy-Man in California—he grows the best tomatoes.
        In the end, Dino's desire to create a better pizza built more than a pizza company... We built a pizza family..</h3>
@@ -37,14 +37,14 @@
      <h2>Place your order here:</h2>
      <div class="row">
        <div class="col-md-6">
-     <form>
+     <form id="orderForm">
        <div class="form-group">
          <label for="customerName">Customer Name:</label>
-         <input type="text" value="Name" class="customerName form-control" required="" placeholder="">
+         <input type="text" value="" class="customerName form-control" required="" placeholder="">
        </div>
        <div class="form-group">
           <label for="customerPhone">Customer Phone Number:</label>
-          <input type="tel" title="Phone number" name="phoneNumber" value="phone number" class="customerPhone form-control">
+          <input type="tel" title="Phone number" name="phoneNumber" value="" class="customerPhone form-control">
         </div>
         <div class="form-group">
           <label for="pizza-count">How many pizza's would you like to have???</label>
@@ -131,7 +131,7 @@
         </div>
         <button type="submit" class="btn btn-success" id="placeOrder">Order Summary</button>
       </div>
-    </div>
+    </div><br>
     <div class="orderSubmitted jumbotron">
       <h2>Thank you for choosing Dino's Pizza Corner! Your order has been placed! Your order will be ready in 25 minutes.</h2>
       <button type="submit" class="btn btn-success" id="newOrder">Place New Order</button>
