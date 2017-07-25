@@ -17,21 +17,12 @@ Specs for Pizza Order Shop
 * User enters phone number
   * Input Example: 505-555-555
   * Output Example: 505-555-555 will be displayed in user's order details.
-* User selects quantity of pizzas.
-  * Input Example: 2
+* User selects size of pizza.
+  * Input Example: medium
   * Output Example: 2 should be displayed and will be used in price calculation
-* User selects cheese types for pizza.
-  * Input Example: cheddar
-  * Output Example: calculate price for cheddar and add it to price calculation
-* User selects sauce types for pizza.
-  * Input Example: barbecue sauce
-  *  Output Example: barbecue is selected from dropdown and calculate price for the same and add it to the price calculation.
-* User selects meat type.
-  *  Input Example: bacon
-  *  Output Example: bacon is selected from dropdown and calculate price for the same and add it to price calculation.
-* User selects vegetables type.
-  *  Input Example: mushrooms.
-  *  Output Example: vegetables are selected from dropdown and calculate price for the same and add it to price calculation.
+* User selects ingredients types for pizza.
+  * Input Example: black olives
+  * Output Example: calculate price for black olives and add it to price calculation.
 
 
 ## Setup/Installation Requirements
@@ -45,7 +36,7 @@ Specs for Pizza Order Shop
 
 ## Known Bugs
 
-_{There are no known issues.}_
+_{Fixed calculation logic in script.}_
 
 ## Support and contact details
 
