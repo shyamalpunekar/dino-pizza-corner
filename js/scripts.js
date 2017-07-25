@@ -3,8 +3,10 @@
 // var meat = [];
 // var vegetable = [];
 // var orderTotal = 0;
-function Pizza(size) {
+function Pizza(size, customerName, customerPhone) {
   this.pizzaSize = size;
+  this.customerName = customerName;
+  this.customerPhone = customerPhone;
   this.pizzaIngredients = [];
 };
 
@@ -94,7 +96,8 @@ $(document).ready(function () {
     var customerPhone = $("#customerPhone").val();
     var countNumber = $("#pizza-count").val();
     var inputtedPizzaSize = $("#pizza-size").val();
-    var newPizza = new Pizza(inputtedPizzaSize);
+    //Creating an instance
+    var newPizza = new Pizza(inputtedPizzaSize, customerName, customerPhone);
     var crust = $("#pizza-crust").val();
     var cheese = $("#cheese-type").val();
 
@@ -111,6 +114,8 @@ $(document).ready(function () {
 
   $(".pizzaOrder").last().click(function() {
     $("#pizza-order-detail").show();
+    $(".pizza-customerName").text(newPizza.customerName);
+    $(".pizza-customerPhone").text(newPizza.customerPhone);
     $(".pizza-size").text(newPizza.pizzaSize);
     $(".pizza-ingredients").text(newPizza.pizzaIngredients);
     $(".order-total").text(newPizza.price());
