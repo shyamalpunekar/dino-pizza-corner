@@ -7,6 +7,10 @@ body {
   width: 160px;
 }
 
+.output{
+  display: block;
+}
+
 #about {
   margin-left: 20px;
 }
